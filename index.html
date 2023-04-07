@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nombre="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xample PWA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="#">Home </a></li>
+            <li> <a href="#pwa">Qué es una PWA </a></li>
+            <li> <a href="#convertir">Convertir Web en PWA  </a></li>
+            <li> <a href="#instalar">Cómo instalarla </a></li>
+        </ul>
+
+    </nav>
+    <header>
+        <button id="toggle" class='toggle'>
+            <span style="font-size: 2em;">&#x2630;</span>
+        </button>
+        <h1> Ejemplo de web PWA </h1>
+
+        <p>
+            Descarga la app PWA en tu móvil, añade el icono a tu pantalla de inicio y accede a la web de forma rápida y
+            sencilla
+        </p>
+
+        <button class='btn-primary' id='open'>
+            Registro
+        </button>
+    </header>
+
+    <div class='container'>
+        <h2 id="pwa"> ¿Qué es una PWA? </h2>
+
+        <p>
+            Una PWA es una aplicación web progresiva que se puede instalar en un dispositivo y funciona tanto en línea
+            como fuera de línea, brindando una experiencia de usuario similar a la de una aplicación nativa.
+        </p>
+
+        <h2 id="convertir"> Cómo convertir una web en PWA </h2>
+
+        Para convertir una web en PWA (Aplicación Web Progresiva) se necesitan los siguientes requisitos:
+
+        <ul>
+            <li>HTTPS: El sitio web debe ser seguro y servirse a través de HTTPS para que el navegador permita la
+                instalación de
+                la PWA.</li>
+
+            <li>Archivo manifest.json: Este archivo contiene información sobre la PWA, como su nombre, descripción,
+                iconos y
+                colores, y debe estar ubicado en el directorio raíz del sitio web.</li>
+
+            <li>Service Worker: Es un script de JavaScript que controla la funcionalidad offline y el almacenamiento en
+                caché
+                del sitio web, permitiendo que la PWA funcione sin conexión a internet.</li>
+
+            <li>Etiqueta meta para viewport: Debe agregarse en el archivo HTML para asegurarse de que el sitio web sea
+                responsivo y se ajuste a diferentes tamaños de pantalla.</li>
+
+            <li>Funcionalidad de carga de contenido inicial: Permite reducir el tiempo de carga y mejorar el rendimiento
+                de la
+                PWA.</li>
+
+            <li>Funcionalidades adicionales: Se pueden agregar funcionalidades adicionales, como notificaciones push y
+                capacidades de acceso a la cámara, el micrófono y la ubicación, si son necesarias para la PWA.</li>
+
+            <li>Estos son los requisitos generales para convertir una web en PWA. Cada sitio web puede tener necesidades
+                específicas adicionales dependiendo de su funcionalidad y requerimientos.</li>
+
+        </ul>
+
+        <h2 id="instalar"> Cómo instalarla </h2>
+        <ul>
+            <li> En la esquina superior derecha, busca el botón de menú (los tres puntos verticales) y pulsa sobre él.
+            </li>
+            <li> Busca la opción "Añadir a pantalla de inicio" o "Instalar aplicación" en el menú desplegable. </li>
+            <li> Pulsa en la opción seleccionada y sigue las instrucciones para completar la instalación de la PWA.
+            </li>
+
+        </ul>
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="btn-close" id="close">
+                <span style="font-size: 1em;">&#x2715;</span>
+            </button>
+            <div class="modal-header">
+                <h3> Registro </h3>
+            </div>
+            <div class="modal-content">
+                <p> Datos para registro </p>
+                <form class="modal-form">
+                    <div>
+                        <label for="nombre">Nombre
+                        </label>
+
+                        <input type="text" id="nombre" placeholder="Nombre" class="form-control">
+
+                    </div>
+                    <div>
+                        <label for="email">Email
+                        </label>
+
+                        <input type="email" id="email" placeholder="Email" class="form-control">
+
+                    </div>
+                    <div>
+                        <label for="password">Password
+                        </label>
+
+                        <input type="password" id="password" class="form-control" placeholder=" Enter Password">
+
+                    </div>
+                    <div>
+                        <label for="password2">Confirma Password
+                        </label>
+
+                        <input type="password" id="password2" placeholder=" Confirma Password " class="form-control">
+
+                    </div>
+                    <input type="submit" value="Enviar datos registro" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
