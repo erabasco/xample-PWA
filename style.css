@@ -183,3 +183,8 @@ button:focus {
     opacity: 1;
   }
 }
+
+/* scroll en anclas */
+#pwa, #convertir, #instalar{
+    scroll-margin-top: 10px;
+}
